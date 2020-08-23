@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+    <link rel="icon" type="image/icon" href="img/badge1.png" />
+    <title>Vasu Choubey</title>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!--header section start-->
+    <!--navbar start-->
+    <nav class="navbar navbar-expand-md navbar-light nav-bg">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="brand_marg_left" href="#"
+          ><img
+            src="img/Logopit2.jpg"
+            data-aos="fade-in"
+            style="width: 80px; height: 60px;;"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto" id="nav_marg_right">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-home"></i> Home
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work"
+                ><i class="fas fa-briefcase"></i> Work</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"
+                ><i class="far fa-address-card"></i> About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                ><i class="fas fa-phone-alt"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--navbar end-->
+
+    <!--head image start-->
+    <div class="head-img">
+      <div class="container ">
+        <h1 class="text-center img-text">I'm <span id="type"></span></h1>
+      </div>
+      <div class="text-center ">
+        <a class="btn btn-lg btn-bg" href="#work">See Work</a>
+      </div>
+    </div>
+
+    <!--head image ends-->
+    <!--header section end-->
+
+    <!--work section starts-->
+
+    <a id="work"></a>
+    <div class="work_bg">
+      <div class="container-fluid">
+        <br /><br />
+        <h1 class="  text-center  work_text">
+          <span id="work_text">My Work</span>
+        </h1>
+        <br />
+        <div class="row knice">
+          <div class="col-md-3 col-sm-6">
+            <img
+              class="img-fluid work_img_marg kek"
+              id="kek"
+              src="img/project.jpg"
+              alt="Hope"
+            />
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img
+              class="img-fluid work_img_marg"
+              src="img/project2.jpeg"
+              alt="The art of thinking"
+            />
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img
+              class="img-fluid work_img_marg"
+              src="img/project3.jpeg"
+              alt="skapandi"
+            />
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img
+              class="img-fluid work_img_marg"
+              src="img/project4.jpeg"
+              alt="Ordering app"
+            />
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-12">
+            <p class=" text-center best_work" >
+              My Best Design Delivered Over The Globe to More Than 1000+
+              Satisfied Clients
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--work section end-->
+    <!--About section start-->
+
+    <div class="about_bg" id="about">
+      <div class="container-fluid">
+        <h1 class="text-center  about_text">
+          About
+        </h1>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <i class="far fa-user user text-center mt-5"></i>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <h3 class="about_heading">
+              I'm a website designer from Punjab, India.
+            </h3>
+            <p class="about_para mt-4">
+              I enjoy turning complex problems into simple, beautiful and
+              intuitive designs. I love making new designs for different
+              websites. When I'm not coding, tweeting, you'll find me gaming.
+              Want to work together? I’d love to hear from you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--About section end-->
+
+    <!--contact section start-->
+
+    <div class="contact" id="contact">
+      <h1 class=" text-center contact-text">
+        Contact
+      </h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <form name="RegForm" class="form-bg mt-4" onsubmit="return wrongText()">
+                  <label for="Name" class="label">Name</label>
+                  <input
+                    class="form-control input-field"
+                    type="text"
+                    name="Name"
+                    placeholder="Name"
+                  />
+                  <label for="Mobile" class="label">Mobile</label>
+                  <input
+                    class="form-control input-field"
+                    type="text"
+                    name="Mobile"
+                    placeholder="Mobile"
+                  />
+                  <label for="E-Mail" class="label">E-Mail</label>
+                  <input
+                    class="form-control input-field"
+                    type="text"
+                    name="E-Mail"
+                    placeholder="E-Mail"
+                  />
+                  <div class="form-group">
+                    <label for="Message" class="label">Message</label>
+                    <textarea
+                      id="my-textarea"
+                      class="form-control"
+                      name="message"
+                      placeholder=" Enter your message"
+                      rows="2"
+                    ></textarea>
+                  </div>
+                  <button class="btn btn-lg form-btn" type="submit">
+                    Submit <i class="fas fa-paper-plane"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--contact section end-->
+
+    <!--footer start-->
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center footer-head">
+              Follow Me
+            </h1>
+            <h1 class="text-center social">
+              <span id="insta-icon" class="icons">
+                <a
+                  href="https://www.instagram.com/an_october_borner/"
+                  title="an_october_borner"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </span>
+              <span id="facebook-icon" class="icons">
+                <a
+                  href="https://www.facebook.com/"
+                  title="Vasu"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </span>
+              <span id="spotify-icon" class="icons">
+                <a
+                  href="https://open.spotify.com/playlist/1kSS6y4iJrAR4pzg5khebE"
+                  title="Vasu Playlist"
+                >
+                  <i class="fab fa-spotify"></i>
+                </a>
+              </span>
+              <span id="twitter-icon" class="icons">
+                <a href="https://twitter.com/vasu_3609" title="Vasu Choubey">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </span>
+            </h1>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="text-center text-white" style="padding: 30px;">
+            Copyright &copy; Vasu Choubey
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <!--copyright XD-->
+
+    <!--footer ends-->
+    <script src="js/typed.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
